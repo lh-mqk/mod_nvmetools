@@ -60,3 +60,7 @@ Run [RunSelfTest.ps1](RunSelfTest.ps1) to:
 4. Write test results to "~/Users/username/Documents/nvmetools/results/..."
 
 Consider other test cases in [./suites/](./suites/)
+
+## 4. Test NVMe SSDs Speed (trial)
+
+Run [RunSpeedTest.ps1](RunSpeedTest.ps1)
