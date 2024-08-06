@@ -42,29 +42,6 @@ Run [RunMonitor.ps1](RunMonitor.ps1) to:
 ## 3. Test NVMe SSDs
 
 > (Requirement: run monitor for at least 1 time)
->
-> You may encounter an error like this:
-```
-PS C:\Users\lamquang\OneDrive - Intel Corporation\Documents\Weekly Summary\WW32> .\RunSelfTest.ps1
- ------------------------------------------------------------------------------------------
-  FATAL ERROR : 50
- ------------------------------------------------------------------------------------------
- Unknown error.  Send developer details below and debug.log
-
-Traceback (most recent call last):
-  File "c:\users\lamquang\onedrive - intel corporation\documents\weekly summary\ww32\.venv\lib\site-packages\nvmetools\console\testnvme.py", line 135, in main
-    exec(code, globals())
-  File "<string>", line 11, in <module>
-ImportError: cannot import name 'TestSuite' from 'nvmetools' (c:\users\lamquang\onedrive - intel corporation\documents\weekly summary\ww32\.venv\lib\site-packages\nvmetools\__init__.py)
-```
-> This is an error of the package its own.
-> Go to "C:\Users\username\Documents\nvmetools\suites\selftest.py" and change:
->
-> **from nvmetools import TestSuite, tests**
->
-> to:
->
-> **from nvmetools.lib.nvme import TestSuite, tests**
 
 Run [RunSelfTest.ps1](RunSelfTest.ps1) to:
 
