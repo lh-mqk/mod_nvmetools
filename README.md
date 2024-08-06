@@ -36,7 +36,7 @@ Run [FirstRunMonitor.ps1](FirstRunMonitor.ps1) to:
 
 The monitor process will:
 
-1. Create a new folder named by current datetime in **monitor_results** folder
+1. Create a new folder named by current datetime
 2. Perform read NVMe SSD and write result to the newly create folder
 3. Loop the process every 5 minutes
 
