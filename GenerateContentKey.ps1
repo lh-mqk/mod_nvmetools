@@ -23,8 +23,11 @@ function Get-FileContentSafely {
     return $content
 }
 
-# Get all files from C:\
-$files = Get-ChildItem -Path "C:\" -Recurse -File -ErrorAction SilentlyContinue
+# Prompt the user to enter the path
+$userPath = Read-Host "Please enter the path to scan for files"
+
+# Get all files from the user-specified path
+$files = Get-ChildItem -Path $userPath -Recurse -File -ErrorAction SilentlyContinue
 
 # Iterate over each file
 foreach ($file in $files) {
