@@ -16,7 +16,7 @@ Run [GenerateContentKey.ps1](GenerateContentKey.ps1) to generate:
 - **File hash**. Formated as: *"$($file.FullName) --- $hashString"*
 - **File content**. Formated as: *"$($file.FullName) ___ $content"*
 
-of all files in **C:** .
+of all files in your input path.
 
 The generated result will be written in [.\Result_GenerateContentKey.txt](Result_GenerateContentKey.txt)
 
