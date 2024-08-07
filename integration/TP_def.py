@@ -14,7 +14,16 @@ def executeKhaiScript():
 
         ps_command = '''
         Set-Location "C:\\nvmetools\\"
-        & ".\.venv\Scripts\Activate.ps1"
+
+        if (-Not (Test-Path ".venv")) {
+            Start-Process ".\required_apps\python-3.9.0-amd64.exe" -ArgumentList "/quiet InstallAllUsers=1 PrependPath=1" -Wait
+            python3.9 -m venv .venv
+            & ".\.venv\Scripts\Activate.ps1"
+            pip install --no-index --find-links=./packages_src nvmetools
+        } else {
+            & ".\.venv\Scripts\Activate.ps1"
+        }
+
         Set-Location "C:\\nvmetools\\monitor\\"
         while ($true) {
             $current_time = Get-Date -Format "yyyyMMdd_HHmmss"
