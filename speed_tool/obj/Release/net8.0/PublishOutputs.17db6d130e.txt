@@ -1,0 +1,6 @@
+C:\Users\lamquang\OneDrive - Intel Corporation\Documents\Code\mod_nvmetools\speed_tool\bin\Release\net8.0\publish\speed_tool.exe
+C:\Users\lamquang\OneDrive - Intel Corporation\Documents\Code\mod_nvmetools\speed_tool\bin\Release\net8.0\publish\speed_tool.dll
+C:\Users\lamquang\OneDrive - Intel Corporation\Documents\Code\mod_nvmetools\speed_tool\bin\Release\net8.0\publish\speed_tool.deps.json
+C:\Users\lamquang\OneDrive - Intel Corporation\Documents\Code\mod_nvmetools\speed_tool\bin\Release\net8.0\publish\speed_tool.runtimeconfig.json
+C:\Users\lamquang\OneDrive - Intel Corporation\Documents\Code\mod_nvmetools\speed_tool\bin\Release\net8.0\publish\speed_tool.pdb
+C:\Users\lamquang\OneDrive - Intel Corporation\Documents\Code\mod_nvmetools\speed_tool\bin\Release\net8.0\publish\CommandLine.dll

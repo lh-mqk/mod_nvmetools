@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3ZTW6GoOKxI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lamquang\\OneDrive - Intel Corporation\\Documents\\Code\\mod_nvmetools\\speed_tool\\speed_tool.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lamquang\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512"
+  ],
+  "logs": []
+}
