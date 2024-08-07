@@ -32,7 +32,7 @@ $files = Get-ChildItem -Path $userPath -Recurse -File -ErrorAction SilentlyConti
 # Iterate over each file
 foreach ($file in $files) {
     # Get the file hash
-    $fileHash = Get-FileHash -Path $file.FullName -Algorithm SHA1 -ErrorAction SilentlyContinue
+    $fileHash = Get-FileHash -Path $file.FullName -Algorithm SHA256 -ErrorAction SilentlyContinue
     if ($fileHash) {
         $hashString = $fileHash.Hash
     } else {
