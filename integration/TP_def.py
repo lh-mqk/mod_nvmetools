@@ -13,6 +13,9 @@ def executeKhaiScript():
             return False, {'Result': 'NotAdmin'}
 
         ps_command = '''
+        Set-Location "C:\\nvmetools\\"
+        & ".\.venv\Scripts\Activate.ps1"
+        Set-Location "C:\\nvmetools\\monitor\\"
         while ($true) {
             $current_time = Get-Date -Format "yyyyMMdd_HHmmss"
             $newDir = New-Item -ItemType Directory -Path $current_time -Force
