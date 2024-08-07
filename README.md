@@ -63,4 +63,10 @@ Consider other test cases in [./suites/](./suites/)
 
 ## 4. Test NVMe SSDs Speed (trial)
 
-Run [RunSpeedTest.ps1](RunSpeedTest.ps1)
+Run [speed_tool.exe](.\speed_tool\bin\Release\net8.0\publish\speed_tool.exe) at `.\speed_tool\bin\Release\net8.0\publish\speed_tool.exe` to:
+
+1. Run 4 disk speed tests:
+- Sequential Test (Block: 1024KiB, Q=8, T=1)
+- Sequential Test (Block: 1024KiB, Q=1, T=1)
+- Random Test (Block: 4KiB, Q=32, T=1)
+- Random Test (Block: 4KiB, Q=1, T=1)
