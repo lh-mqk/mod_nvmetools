@@ -24,7 +24,13 @@ def executeKhaiScript():
             & ".\.venv\Scripts\Activate.ps1"
         }
 
-        Set-Location "C:\\nvmetools\\monitor\\"
+        $monitorPath = "C:\nvmetools\monitor\"
+        if (-Not (Test-Path $monitorPath)) {
+            New-Item -ItemType Directory -Path $monitorPath
+        }
+
+        Set-Location $monitorPath
+        
         while ($true) {
             $current_time = Get-Date -Format "yyyyMMdd_HHmmss"
             $newDir = New-Item -ItemType Directory -Path $current_time -Force

@@ -20,7 +20,7 @@ if (-not (Test-Admin)) {
 
 & ".\required_apps\fio-3.37-x64.msi"
 
-python3.9 -m venv .venv
+& "C:\Users\$env:USERNAME\AppData\Local\Programs\Python\Python39\python.exe" -m venv .venv
 
 & ".\.venv\Scripts\Activate.ps1"
 
