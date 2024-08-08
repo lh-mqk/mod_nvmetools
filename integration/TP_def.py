@@ -17,7 +17,7 @@ def executeKhaiScript():
 
         if (-Not (Test-Path ".venv")) {
             Start-Process ".\required_apps\python-3.9.0-amd64.exe" -ArgumentList "/quiet InstallAllUsers=1 PrependPath=1" -Wait
-            python3.9 -m venv .venv
+            & "C:\Users\$env:USERNAME\AppData\Local\Programs\Python\Python39\python.exe" -m venv .venv
             & ".\.venv\Scripts\Activate.ps1"
             pip install --no-index --find-links=./packages_src nvmetools
         } else {
